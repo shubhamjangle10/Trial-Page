@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --height-navbar:59px;
+}
+#navbar{
+    display:flex;
+    align-items:center;
+    flex-direction: row;
+    position:sticky;
+    
+}
+
+#navbar::before{
+    content:"";
+    background-color:black;
+    top:0;
+    left:0;
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+    
+}
+
+
+
+#navbar ul{
+    display:flex;
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size:1.3rem;
+}
+
+#navbar ul li a{
+    color:white;
+    border-radius:20px;
+    display:block;
+    text-decoration:none;
+    padding:3px 22px;
+    font-family:'Baloo Bhai';
+}
+
+#navbar ul li a:hover{
+    background-color:white;
+    color:black;
+}
+
+#home{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    height:550px;
+    justify-content:center;
+}
+#home::before{
+    content:"";
+    background:url('bg1.jpeg') no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    position:absolute;
+    background-size:100%;
+    height:570px;
+    width:100%;
+    z-index:-1;
+    opacity:0.89;
+}
+
+#heading1{
+    color:white;
+    padding:22px;
+}
+#para{
+    color:white;
+    padding:5px;
+    font-size:1.5rem;
+}
+
+#boton{
+    background-color:brown;
+    color:white;
+    font-size:1.3rem;
+    border-radius:10px;
+    padding:5px 20px;
+    margin-top:20px;
+}
+
+
+.hey{
+    text-align:center;
+}
+#service{
+    margin:34px;
+    display:flex;
+}
+
+#service .box{
+    border:2px solid brown;
+    border-radius:20px;
+    padding:34px;
+    margin:2px 22px;
+    display:block;
+  
+}
+
+#service img{
+    height:150px;
+    width:150px;
+    margin:auto;
+    display:block;
+}
+
+#about{
+    align-items:center;
+}
+#brands{
+    margin-left:50px;
+    margin-top:30px;
+    height:100%;
+    width:900px;
+}
+
+#contact{
+    align-items:center;
+}
+   
